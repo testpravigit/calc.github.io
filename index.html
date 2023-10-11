@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style type="text/css">
+        body{
+            background-color: rgb(18, 18, 18);
+            display: flex;
+            position: relative;
+            top: 100px;
+            
+            justify-content: center;
+            align-items: center;
+          
+        }
+        input{
+            background-color: rgb(8, 8, 8);
+            position: absolute;
+            top: 60px;
+            height: 40px;
+            width: 300px;
+            border: transparent;
+            
+            border: none;
+            outline: none;
+            text-align: right;
+            color: aqua;
+           
+        }
+        button{
+            width:50px;
+            height: 50px;
+            margin: 10px;
+           background-color: black;
+           border: transparent;
+           color: rgb(81, 120, 154);
+          
+           border: transparent;
+        }
+        button:hover{
+            box-shadow: 5px 5px 5px 3px;
+           
+        }
+        .container{
+            background-color: rgb(8, 8, 8);
+            width: 310px;
+            height: 500px;
+          
+        }
+        .main{
+            position: relative;
+            top: 100px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <input id="input" type="text" value="" name="display"  placeholder="ENTER..." readonly >
+    <div class="main">
+    <div>
+        <button  value="AC"  >AC</button>
+        <button  value="DEL">DEL</button>
+        <button  value="%">%</button>
+        <button  value="/">/</button>
+    </div>
+    <div>
+        <button value="7">7</button> 
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button value="*">*</button>
+    </div>
+    <div>
+        <button value="4" >4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button value="-">-</button>
+    </div>
+  <div>
+    <button value="1" >1</button>
+    <button value="d2">2</button>
+    <button value="3">3</button>
+    <button value="+">+</button>
+  </div>
+  <div>
+    <button value="00" >00</button>
+    <button value="0">0</button>
+    <button value=".">.</button>
+    <button value="=">=</button>
+  </div>
+</div>
+
+
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
